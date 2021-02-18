@@ -1,0 +1,9 @@
+
+// run client
+go run cmd/client/client.go
+
+//run server
+go run cmd/server/server.go
+
+//gerar pb
+protoc --proto_path=proto proto/*.proto --go_out=pb --go-grpc_out=pb
